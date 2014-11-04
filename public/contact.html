@@ -331,32 +331,6 @@
                     </div>
                 </header>
                 <!-- //Header// -->
-                <div class="top-title-wrapper">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <div class="page-info">
-                                    <h1 class="h1-page-title">Error 404</h1>
-
-                                    <h2 class="h2-page-desc">
-                                        Page Not Found
-                                    </h2>
-
-                                    <!-- BreadCrumb -->
-                                    <div class="breadcrumb-container">
-                                        <ol class="breadcrumb">
-                                            <li>
-                                                <a href="">Home</a>
-                                            </li>
-                                            <li class="active">404</li>
-                                        </ol>
-                                    </div>
-                                    <!-- BreadCrumb -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div><!--.top wrapper end -->
 
             <div class="loading-container">
@@ -368,24 +342,157 @@
 
 
             <div class="content-wrapper hide-until-loading">
+                <!-- Contact Map -->
+
+                <div class="contact-map3" id="contact_map">
+
+                </div>
+
+
+
+                <!-- Contact Map -->
                 <div class="body-wrapper">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12 col-sm-12">
+                            <div class="col-md-8 col-sm-8">
+                                <div class="contact-body">
+                                    <h3 class="h3-body-title">
+                                        Leave A Message
+                                    </h3>
+                                    <p class="body_paragraph contact-paragraph">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                    </p>
 
-                                <div class="not-found-404">
-                                    <h2>404<i class="iscon-remove-sign skin-text"></i></h2>
-                                    <p>We're sorry, but the page you were looking for doesn't exist.</p>
+                                    <form class="form-wrapper" id="contact-form" method="post" role="form" novalidate>
 
-                                    <form action="#" id="search-form" class="form-wrapper">
 
-                                        <div class="search-404">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-7">
+                                                    <label for="name">
+                                                        Name *
+                                                    </label>
+                                                    <input type="text" id="name" name="name" class="form-control" data-errmsg="Name is required."
+                                                           minlength="2" placeholder="Your Name" required/>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                            <input type="text" name="search" class="inputStyle search-text"/>
-                                            <input type="submit" value="Search" class="search-submit"/>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-7">
+                                                    <label for="email">
+                                                        Email *
+                                                    </label>
+                                                    <input type="text" id="email" name="email" class="form-control" data-errmsg="Email is required."
+                                                           minlength="2" placeholder="Your Email" required/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-7">
+                                                    <label for="message">
+                                                        Subject
+                                                    </label>
+                                                    <input type="text" id="subject" name="subject" class="form-control"
+                                                           placeholder="Your Subject"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-8">
+                                                    <label for=message">
+                                                        Message *
+                                                    </label>
+                                                    <textarea id="message" name="message" class="form-control" data-errmsg="Message is required."
+                                                              placeholder="Your Message" rows="3" required></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 offset2">
+                                                <input type="submit" value="Submit" class="btn btn-lg" />
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1">
+                                <div class="sidebar">
+
+
+                                    <div class="sidebar-block">
+                                        <h3 class="h3-sidebar-title">
+                                            Contact Us
+                                        </h3>
+                                        <div class="sidebar-icon-item">
+                                            <i class="icon-phone"></i> (+1) 777-444-333
+                                        </div>
+                                        <div class="sidebar-icon-item">
+                                            <i class="icon-email"></i> email@company.com
+                                        </div>
+                                        <div class="sidebar-icon-item">
+                                            <i class="icon-home"></i> Address in City, P.O BOX 1111, Country
+                                        </div>
+                                    </div>
+
+                                    <div class="sidebar-block">
+                                        <h3 class="h3-sidebar-title">
+                                            MARKETING DEPARTMENT
+                                        </h3>
+                                        <p>
+                                            <strong>Address: </strong>Address in City, P.O BOX 1111
+                                            <br />
+                                            <strong>Phone:</strong> +777-444-333
+                                            <br />
+                                            <strong>Email: </strong>email@company.com
+                                        </p>
+                                    </div>
+                                    <div class="sidebar-block">
+                                        <h3 class="h3-sidebar-title">
+                                            Socials
+                                        </h3>
+
+
+                                        <div class="social-icons">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#" title="yahoo" target="_blank" class="social-media-icon yahoo-icon">yahoo</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="ember" target="_blank" class="social-media-icon ember-icon">ember</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="tumblr" target="_blank" class="social-media-icon tumblr-icon">tumblr</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="facebook" target="_blank" class="social-media-icon facebook-icon">facebook</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="apple" target="_blank" class="social-media-icon apple-icon">apple</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="lastfm" target="_blank" class="social-media-icon lastfm-icon">lastfm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="wordpress" target="_blank" class="social-media-icon wordpress-icon">wordpress</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="dropbox" target="_blank" class="social-media-icon dropbox-icon">dropbox</a>
+                                                </li>
+
+                                            </ul>
 
                                         </div>
-                                    </form>                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -537,4 +644,3 @@
         <script src="js/retina.js" type="text/javascript"></script> 
     </body>
 </html>
-
