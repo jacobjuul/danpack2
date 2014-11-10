@@ -461,10 +461,10 @@ var map;
 function contactusMap() {
 
     var myLatlng, mapOptions, marker;
-    var myLatlng = new google.maps.LatLng(-37.817590, 144.965188);
+    var myLatlng = new google.maps.LatLng(55.807901, 12.388586);
 
     mapOptions = {
-        zoom: 11,
+        zoom: 13,
         center: myLatlng,
         scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -475,7 +475,7 @@ function contactusMap() {
     marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Envato'
+        title: 'Danpack'
     });
 }
 

@@ -9,6 +9,10 @@ def home
 	
 end
 
+def kontakt
+
+end
+
 
 
 
