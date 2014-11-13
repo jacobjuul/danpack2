@@ -13,7 +13,8 @@ def kontakt
 
 end
 
-
+def om
+end
 
 
 end

@@ -28,14 +28,14 @@
                                     <ul class="navigation">
                                         
                                         <li>
-                                            <a href="#">
+                                            <%= link_to om_path, data: { no_turbolink: true } do %>
                                                 <span class="label-nav">
                                                     Om Os
                                                 </span>
                                                 <span class="label-nav-sub" data-hover="Kompetencer">
                                                     Kompetencer
                                                 </span>
-                                            </a>
+                                            <% end %>
                                             
                                         </li>
                                         <li>
@@ -45,7 +45,7 @@
                                                 <span class="label-nav">
                                                     Kontakt
                                                 </span>
-                                                <span class="label-nav-sub" data-hover="Om Os">
+                                                <span class="label-nav-sub" data-hover="spørgsmål">
                                                     Spørgsmål
                                                 </span>
                                             <% end %>

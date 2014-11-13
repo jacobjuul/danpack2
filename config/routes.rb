@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'application#home'
 
   get 'kontakt', to: 'application#kontakt'
+  get 'om', to: 'application#om'
 
 
 
