@@ -16,15 +16,6 @@
 
 
 
-	#om li {
-	  padding-left: 1.2em;
-	}
 
-	#om li:before {
-	  content: "\f0c8"; /* FontAwesome char code inside the '' */
-	  font-family: FontAwesome; /* FontAwesome or whatever */
-	  display: inline-block;
-	  width: 1.2em; /* same as padding-left set on li */
-	  margin-left: -1.2em; /* same as padding-left set on li */
-	  color:#ff6600;
-	}
+
+	
