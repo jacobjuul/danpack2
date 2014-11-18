@@ -6456,3 +6456,17 @@ Testimonial
 }
 
 
+/* custom styles */
+
+a {
+    color: #969696 !important;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
