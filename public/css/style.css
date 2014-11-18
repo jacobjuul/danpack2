@@ -327,7 +327,7 @@ textarea .h4-section-title {
     font-size: 18px;
     color: #4b4b4b !important;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: none;
     margin: 0px 0 20px 0px;
     line-height: 20px;
 }
