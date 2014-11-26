@@ -457,27 +457,37 @@ function easyTabsZeina(selector, options) {
 
 
 /* Contaact Map */
-var map;
-function contactusMap() {
+var locations = [
+      ['Danmark', 55.807901, 12.388586, 4],
+      ['Sverige', 59.523670, 17.911626, 5],
+      ['Cronulla Beach', -34.028249, 151.157507, 3],
+      ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+      ['Maroubra Beach', -33.950198, 151.259302, 1]
+    ];
 
-    var myLatlng, mapOptions, marker;
-    var myLatlng = new google.maps.LatLng(55.807901, 12.388586);
-
-    mapOptions = {
-        zoom: 13,
-        center: myLatlng,
-        scrollwheel: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    map = new google.maps.Map(document.getElementById('contact_map'), mapOptions);
-
-    marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        title: 'Danpack'
+    var map = new google.maps.Map(document.getElementById('contact_map'), {
+      zoom: 5,
+      center: new google.maps.LatLng(57.435341, 15.260010),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-}
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
 
 
 /**
